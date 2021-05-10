@@ -1,0 +1,156 @@
+.container {
+    min-height: 50vh;
+    min-width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start CSS - Q&Q */
+.bodyQuotes {
+    background-color: #F1E3D3;
+}
+
+.indexBox {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.boxQuotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C48945;
+    border-radius: 7px;
+}
+
+.boxQuotes .text {
+    color: #fefefe;
+}
+
+#quoteBtn {
+    padding: 0.5rem 0.5rem;
+    border: 3px solid #fefefe;
+    border-radius: 7px;
+    color: #fefefe;
+    background-color: rgba(10, 59, 87, 0.6);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+#quoteBtn:hover {
+    background-color: rgba(10, 59, 87);
+}
+
+#quote {
+    color: rgb(179, 0, 0);
+}
+
+#quoteAuthor {
+    color: rgb(100, 37, 37);
+}
+
+/* End CSS - Q&Q */
+
+/* Start CSS - Hex Colors */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 0.7rem;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+}
+
+.hexColor {
+    color: #fefefe;
+}
+
+.colorBtn {
+    padding: 0.7rem 0.7rem;
+    border: 3px solid #fefefe;
+    border-radius: 7px;
+    color: #fefefe;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.colorBtn:hover {
+    background: rgba(0, 0, 0);
+}
+
+/* End CSS - Hex Colors */
+
+/* Start CSS - Message List */
+.bodyMessage {
+    background-color: rgba(252, 191, 183);
+}
+
+.boxMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(170, 68, 101, 0.8);
+    border-radius: 7px;
+}
+
+#messageInput {
+    border-radius: 7px;
+    border: none;
+    width: 75%;
+    height: 5.5vh;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+#messageInput:focus {
+    box-shadow: 0 0 10px rgb(179, 0, 0);
+}
+
+#messageBtn {
+    background-color: rgba(16, 37, 66, 0.6);
+    font-size: 1.5rem;
+    color: #fefefe;
+    border: none;
+    border-radius: 7px;
+    width: 50%;
+    cursor: pointer;
+}
+
+#messageBtn:hover {
+    background-color: rgba(16, 37, 66);
+}
+
+#messageSent {
+    color: #fefefe;
+}
+
+/* End CSS - Message List */
+
+/* Start CSS - Counter */
+.counterBody {
+    background-color: rgba(202, 196, 206);
+}
+
+.counterBox {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(144, 103, 198, 0.6);
+    border-radius: 9px;
+}
+
+.counter {
+    font-size: 8rem;
+    color: #F2F3D9;
+}
+
+/* End CSS - Counter */
