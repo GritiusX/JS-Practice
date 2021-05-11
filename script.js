@@ -63,6 +63,27 @@ let sliderCounter = 0;
 if (prevBtn != null) prevBtn.addEventListener('click', lastPic);
 if (nextBtn != null) nextBtn.addEventListener('click', nextPic);
 
+/* Calculator Variables */
+const btns = document.querySelectorAll(`.btn`);
+const screen = document.querySelector(`.screen`);
+const equalBtn = document.querySelector(`.btn-equal`);
+const clearBtn = document.querySelector(`.btn-clear`);
+
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener(`click`, function () {
+        let numberC = btns[i].getAttribute(`data-num`);
+        screen.value += numberC;
+    })
+}
+equalBtn.addEventListener(`click`, function () {
+    let valueC = eval(screen.value);
+    screen.value = valueC;
+})
+
+clearBtn.addEventListener(`click`, function () {
+    screen.value = ``;
+})
+
 
 /* -------------------------- FUNCTIONS ------------------------- */
 
