@@ -154,3 +154,45 @@
 }
 
 /* End CSS - Counter */
+
+/* Start CSS - Counter */
+.sliderBody {
+    background: url('/assets/imgs/background.jpg')center/cover no-repeat;
+    min-height: 100vh;
+}
+
+.sliderBox {
+    background-color: #CD797C;
+    background: url('/assets/imgs/nyc/1.jpg')center/cover no-repeat;
+    min-width: 70vh;
+    min-height: 80vh;
+    border-radius: 15px;
+    box-shadow: 5px 10px black;
+    position: relative;
+}
+
+.check {
+    background-color: #1C3041;
+    min-height: 6vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 25px;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+/* End CSS - Counter */
