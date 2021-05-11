@@ -54,6 +54,17 @@ let count = 0;
 if (addCount != null) addCount.addEventListener('click', addCounter);
 if (lowCount != null) lowCount.addEventListener('click', lowCounter);
 
+/* Slider Variables */
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+const sliderBox = document.querySelector('.sliderBox');
+let sliderCounter = 0;
+
+if (prevBtn != null) prevBtn.addEventListener('click', lastPic);
+if (nextBtn != null) nextBtn.addEventListener('click', nextPic);
+
+
+/* -------------------------- FUNCTIONS ------------------------- */
 
 /* ---------------- HexColor Function --------------- */
 function changeColor() {
@@ -136,3 +147,37 @@ function lowCounter() {
         fill: 'forwards'
     });
 }
+
+/* ---------------- Slider Function ---------------*/
+function nextPic() {
+    sliderBox.animate([{
+        opacity: `0.1`
+    }, {
+        opacity: `1.0`
+    }], {
+        duration: 1500,
+        fill: `forwards`
+    });
+    if (sliderCounter === 4) {
+        sliderCounter = -1;
+    }
+
+    sliderCounter++;
+    sliderBox.style.backgroundImage = `url(../assets/imgs/nyc/nyc-${sliderCounter}.jpg)`;
+};
+
+function lastPic() {
+    sliderBox.animate([{
+        opacity: `0.1`
+    }, {
+        opacity: `1.0`
+    }], {
+        duration: 1500,
+        fill: `forwards`
+    });
+    if (sliderCounter === 0) {
+        sliderCounter = 5;
+    }
+    sliderCounter--;
+    sliderBox.style.backgroundImage = `url(../assets/imgs/nyc/nyc-${sliderCounter}.jpg)`;
+};

@@ -162,8 +162,9 @@
 }
 
 .sliderBox {
+    background: #1C3041;
     background-color: #CD797C;
-    background: url('/assets/imgs/nyc/1.jpg')center/cover no-repeat;
+    background: url('/assets/imgs/nyc/nyc-0.jpg')center/cover no-repeat;
     min-width: 70vh;
     min-height: 80vh;
     border-radius: 15px;
