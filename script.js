@@ -69,20 +69,6 @@ const screen = document.querySelector(`.screen`);
 const equalBtn = document.querySelector(`.btn-equal`);
 const clearBtn = document.querySelector(`.btn-clear`);
 
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener(`click`, function () {
-        let numberC = btns[i].getAttribute(`data-num`);
-        screen.value += numberC;
-    })
-}
-equalBtn.addEventListener(`click`, function () {
-    let valueC = eval(screen.value);
-    screen.value = valueC;
-})
-
-clearBtn.addEventListener(`click`, function () {
-    screen.value = ``;
-})
 
 
 /* -------------------------- FUNCTIONS ------------------------- */
@@ -202,3 +188,23 @@ function lastPic() {
     sliderCounter--;
     sliderBox.style.backgroundImage = `url(../assets/imgs/nyc/nyc-${sliderCounter}.jpg)`;
 };
+
+/* ---------------- Calculator Function ---------------*/
+for (let i = 0; i < btns.length; i++) {
+    if (btns[i] != null) btns[i].addEventListener(`click`, function () {
+        let numberC = btns[i].getAttribute(`data-num`);
+        screen.value += numberC;
+    })
+}
+if (equalBtn != null) equalBtn.addEventListener(`click`, function () {
+    if (screen.value === '') {
+        alert('Input empty, please add numbers');
+    } else {
+        let valueC = eval(screen.value);
+        screen.value = valueC;
+    }
+})
+
+if (clearBtn != null) clearBtn.addEventListener(`click`, function () {
+    screen.value = ``;
+})
